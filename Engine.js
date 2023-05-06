@@ -4,14 +4,10 @@ export class Engine {
     hpPower = 350
     destination = 'kiev'
 
-    constructor(brand) {
+    constructor(type, brand, hpPower, destination) {
         this.brand = brand;
+        this.type = type;
+        this.hpPower = hpPower;
+        this.destination = destination;
     }
 }
-
-
-const bmwEngine = new Engine('BMW'); 
-const toyotaEngine = new Engine('Toyota'); 
-console.log('bmwEngine', bmwEngine); 
-console.log('toyotaEngine', toyotaEngine); 
- 
